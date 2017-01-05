@@ -13,6 +13,7 @@ use Ups\Rate;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
+use Ups\Shipping;
 
 /**
  * This is the Ups Api service provider class.
@@ -45,6 +46,7 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->registerTimeInTransit();
         $this->registerLocator();
         $this->registerTradeability();
+        $this->registerShipping();
     }
 
     /**
@@ -190,6 +192,24 @@ class UpsApiServiceProvider extends ServiceProvider
     }
 
     /**
+     * Register the Tradeability class.
+     *
+     * @return void
+     */
+    protected function registerShipping()
+    {
+        $this->app->singleton('ups.shipping', function (Container $app) {
+            $config = $app->config->get('ups');
+
+            return new Shipping(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
+        });
+    }
+
+    /**
      * Get the services provided by the provider.
      *
      * @return string[]
@@ -204,6 +224,7 @@ class UpsApiServiceProvider extends ServiceProvider
             'ups.time-in-transit',
             'ups.locator',
             'ups.tradeability',
+            'ups.shipping',
         ];
     }
 }

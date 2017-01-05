@@ -10,6 +10,7 @@ use Ups\Rate;
 use Ups\TimeInTransit;
 use Ups\Tracking;
 use Ups\Tradeability;
+use Ups\Shipping;
 
 /**
  * This is the service provider test class.
@@ -53,5 +54,10 @@ class ServiceProviderTest extends TestCase
     public function testTradeabilityIsInjectable()
     {
         $this->assertIsInjectable(Tradeability::class);
+    }
+
+    public function testShippingIsInjectable()
+    {
+        $this->assertIsInjectable(Shipping::class);
     }
 }
