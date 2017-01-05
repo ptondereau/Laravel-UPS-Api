@@ -73,7 +73,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.address-validation', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new AddressValidation($config['access_key'], $config['user_id'], $config['password']);
+            return new AddressValidation(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
@@ -87,7 +91,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.quantum-view', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new QuantumView($config['access_key'], $config['user_id'], $config['password']);
+            return new QuantumView(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
@@ -101,7 +109,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.tracking', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Tracking($config['access_key'], $config['user_id'], $config['password']);
+            return new Tracking(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
@@ -115,7 +127,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.rate', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Rate($config['access_key'], $config['user_id'], $config['password']);
+            return new Rate(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
@@ -129,7 +145,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.time-in-transit', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new TimeInTransit($config['access_key'], $config['user_id'], $config['password']);
+            return new TimeInTransit(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
@@ -143,7 +163,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.locator', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Locator($config['access_key'], $config['user_id'], $config['password']);
+            return new Locator(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
@@ -157,7 +181,11 @@ class UpsApiServiceProvider extends ServiceProvider
         $this->app->singleton('ups.tradeability', function (Container $app) {
             $config = $app->config->get('ups');
 
-            return new Tradeability($config['access_key'], $config['user_id'], $config['password']);
+            return new Tradeability(
+                $config['access_key'],
+                $config['user_id'],
+                $config['password'],
+                $config['sandbox']);
         });
     }
 
