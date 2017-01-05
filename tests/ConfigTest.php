@@ -25,4 +25,9 @@ class ConfigTest extends TestCase
     {
         $this->assertEquals(Config::get('ups.password'), 'test');
     }
+
+    public function testSandboxConfig()
+    {
+        $this->assertTrue(Config::get('ups.sandbox'));
+    }
 }
