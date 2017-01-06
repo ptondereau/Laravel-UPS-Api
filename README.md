@@ -47,6 +47,8 @@ You can register the all or some Ups facade in the `aliases` key of your `config
 * `'UPSTimeInTransit' => 'Ptondereau\LaravelUpsApi\Facades\UpsTimeInTransit'`
 * `'UPSTracking' => 'Ptondereau\LaravelUpsApi\Facades\UpsTracking'`
 * `'UPSTradeability' => 'Ptondereau\LaravelUpsApi\Facades\UpsTradeability'`
+* `'UPSShipping' => 'Ptondereau\LaravelUpsApi\Facades\UpsShipping'`
+
 
 
 ## Configuration
@@ -67,6 +69,7 @@ You also need to add env variables into your .env with your credentials:
 UPS_ACCESS_KEY=key
 UPS_USER_ID=userId
 UPS_PASSWORD=password
+UPS_SANDBOX=true
 ```
 
 ## Usage
