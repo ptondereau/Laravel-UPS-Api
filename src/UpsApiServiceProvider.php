@@ -76,10 +76,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new AddressValidation(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -95,10 +95,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new QuantumView(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -114,10 +114,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new Tracking(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -133,10 +133,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new Rate(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -152,10 +152,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new TimeInTransit(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -171,10 +171,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new Locator(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -190,10 +190,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new Tradeability(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
@@ -209,10 +209,10 @@ class UpsApiServiceProvider extends ServiceProvider
             $config = $app->config->get('ups');
 
             return new Shipping(
-                $config['access_key'],
-                $config['user_id'],
-                $config['password'],
-                $config['sandbox']
+            $config['access_key'],
+            $config['user_id'],
+            $config['password'],
+            $config['sandbox']
             );
         });
     }
