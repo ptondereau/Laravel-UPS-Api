@@ -79,7 +79,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -97,7 +98,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -115,7 +117,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -133,7 +136,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -151,7 +155,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -169,7 +174,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -187,7 +193,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
@@ -205,7 +212,8 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['access_key'],
                 $config['user_id'],
                 $config['password'],
-                $config['sandbox']);
+                $config['sandbox']
+            );
         });
     }
 
