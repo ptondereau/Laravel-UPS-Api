@@ -4,13 +4,13 @@
   "keywords": ["laravel", "framework", "UPS", "Laravel UPS Api", "Laravel-Ups-Api", "Pierre Tondereau", "Ptondereau"],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/contracts": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
-    "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
+    "illuminate/contracts": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0",
+    "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0|~5.5.0",
     "gabrielbull/ups-api": "^0.7.6"
   },
   "require-dev": {
-    "phpunit/phpunit": "^4.8|^5.0",
-    "graham-campbell/testbench": "^3.1",
+    "phpunit/phpunit": "^4.8|^5.0|^6.0",
+    "graham-campbell/testbench": "^4.0",
     "codeclimate/php-test-reporter": "^0.3.0"
   },
   "autoload": {
@@ -27,9 +27,16 @@
   "authors": [
     {
       "name": "Pierre Tondereau",
-      "email": "me@pierre-tondereau.com"
+      "email": "pierre.tondereau@gmail.com"
     }
   ],
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ptondereau\\LaravelUpsApi\\UpsApiServiceProvider"
+      ]
+    }
+  }
 }
