@@ -1,7 +1,7 @@
 Laravel UPS Api
 =================
 
-## For Laravel 5.1+
+## For Laravel 5.5+
 
 [![Build Status](https://travis-ci.org/ptondereau/Laravel-UPS-Api.svg?branch=master)](https://travis-ci.org/ptondereau/Laravel-UPS-Api)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/ptondereau/Laravel-UPS-Api/?branch=master)
@@ -15,8 +15,6 @@ Laravel UPS Api
 Laravel UPS Api was created by, and is maintained by [Pierre Tondereau](https://github.com/ptondereau), and PHP UPS Api was created by, and is maintained by [Gabriel Bull](https://github.com/gabrielbull) at [PHP UPS API](https://github.com/gabrielbull/php-ups-api).
 
 ## Installation
-
-Either [PHP](https://php.net) 5.5+ or [HHVM](http://hhvm.com) 3.6+ are required.
 
 To get the latest version of Laravel UPS Api, simply require the project using [Composer](https://getcomposer.org):
 
