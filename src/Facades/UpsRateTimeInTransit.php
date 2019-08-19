@@ -5,14 +5,14 @@ namespace Ptondereau\LaravelUpsApi\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * This is the UpsAddressValidation facade class.
+ * This is the RateTimeInTransit facade class.
  *
  * @author Pierre Tondereau <pierre.tondereau@gmail.com>
  */
-class UpsAddressValidation extends Facade
+class UpsRateTimeInTransit extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'ups.address-validation';
+        return 'ups.ratetimeintransit';
     }
 }

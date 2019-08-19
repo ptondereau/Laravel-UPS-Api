@@ -7,6 +7,7 @@ use Ups\AddressValidation;
 use Ups\Locator;
 use Ups\QuantumView;
 use Ups\Rate;
+use Ups\RateTimeInTransit;
 use Ups\Shipping;
 use Ups\SimpleAddressValidation;
 use Ups\TimeInTransit;
@@ -65,5 +66,10 @@ class ServiceProviderTest extends TestCase
     public function testShippingIsInjectable()
     {
         $this->assertIsInjectable(Shipping::class);
+    }
+
+    public function testRateTimeInTransitIsInjectable()
+    {
+        $this->assertIsInjectable(RateTimeInTransit::class);
     }
 }
