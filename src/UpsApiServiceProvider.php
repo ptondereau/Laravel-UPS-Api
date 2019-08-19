@@ -166,7 +166,6 @@ class UpsApiServiceProvider extends ServiceProvider
                 $config['user_id'],
                 $config['password'],
                 $config['sandbox'],
-                null,
                 $app->make('log')
             );
         });
