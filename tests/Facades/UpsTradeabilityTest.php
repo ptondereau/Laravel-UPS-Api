@@ -16,32 +16,17 @@ class UpsTradeabilityTest extends TestCase
 {
     use FacadeTrait;
 
-    /**
-     * Get the facade accessor.
-     *
-     * @return string
-     */
-    protected function getFacadeAccessor()
+    protected function getFacadeAccessor(): string
     {
         return 'ups.tradeability';
     }
 
-    /**
-     * Get the facade class.
-     *
-     * @return string
-     */
-    protected function getFacadeClass()
+    protected function getFacadeClass(): string
     {
         return UpsTradeability::class;
     }
 
-    /**
-     * Get the facade root.
-     *
-     * @return string
-     */
-    protected function getFacadeRoot()
+    protected function getFacadeRoot(): string
     {
         return Tradeability::class;
     }
