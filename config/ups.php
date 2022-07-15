@@ -7,7 +7,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This option specifies the UPS credentials for your account.
-    | You can put it here but I strongly recommend to put thoses settings into your
+    | You can put it here but I strongly recommend to put those settings into your
     | .env & .env.example file.
     |
     */

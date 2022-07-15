@@ -30,14 +30,13 @@ Instead, you may of course manually update your require block and run `composer 
     }
 }
 ```
-
-Once Laravel UPS Api is installed, you need to register the service provider. Open up `config/app.php` and add the following to the `providers` key.
+The `UpsApiServiceProvider` is auto-discovered and registered by default. If needed, you may register it manually by opening up `config/app.php` and adding the following to the `providers` key.
 
 * `'Ptondereau\LaravelUpsApi\UpsApiServiceProvider'`
 
-You can register the all or some Ups facade in the `aliases` key of your `config/app.php` file if you like.
+You can register all or some of the Ups facades in the `aliases` key of your `config/app.php` file if you like.
 
-* `'UpsAddressValidator' => 'Ptondereau\LaravelUpsApi\Facades\UpsAddressValidator'`
+* `'UpsAddressValidation' => 'Ptondereau\LaravelUpsApi\Facades\UpsAddressValidation'`
 * `'UpsLocator' => 'Ptondereau\LaravelUpsApi\Facades\UpsLocator'`
 * `'UpsQuantumView' => 'Ptondereau\LaravelUpsApi\Facades\UpsQuantumView'`
 * `'UpsRate' => 'Ptondereau\LaravelUpsApi\Facades\UpsRate'`
