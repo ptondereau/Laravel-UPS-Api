@@ -17,7 +17,7 @@ abstract class TestCase extends AbstractPackageTestCase
      *
      * @return string
      */
-    protected function getServiceProviderClass(): string
+    protected static function getServiceProviderClass(): string
     {
         return UpsApiServiceProvider::class;
     }

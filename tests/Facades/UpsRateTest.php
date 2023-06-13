@@ -16,17 +16,17 @@ class UpsRateTest extends TestCase
 {
     use FacadeTrait;
 
-    protected function getFacadeAccessor(): string
+    protected static function getFacadeAccessor(): string
     {
         return 'ups.rate';
     }
 
-    protected function getFacadeClass(): string
+    protected static function getFacadeClass(): string
     {
         return UpsRate::class;
     }
 
-    protected function getFacadeRoot(): string
+    protected static function getFacadeRoot(): string
     {
         return Rate::class;
     }
