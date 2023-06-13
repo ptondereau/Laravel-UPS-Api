@@ -16,17 +16,17 @@ class UpsQuantumViewTest extends TestCase
 {
     use FacadeTrait;
 
-    protected function getFacadeAccessor(): string
+    protected static function getFacadeAccessor(): string
     {
         return 'ups.quantum-view';
     }
 
-    protected function getFacadeClass(): string
+    protected static function getFacadeClass(): string
     {
         return UpsQuantumView::class;
     }
 
-    protected function getFacadeRoot(): string
+    protected static function getFacadeRoot(): string
     {
         return QuantumView::class;
     }

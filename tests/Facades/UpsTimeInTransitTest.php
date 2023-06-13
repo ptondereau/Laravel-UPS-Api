@@ -16,17 +16,17 @@ class UpsTimeInTransitTest extends TestCase
 {
     use FacadeTrait;
 
-    protected function getFacadeAccessor(): string
+    protected static function getFacadeAccessor(): string
     {
         return 'ups.time-in-transit';
     }
 
-    protected function getFacadeClass(): string
+    protected static function getFacadeClass(): string
     {
         return UpsTimeInTransit::class;
     }
 
-    protected function getFacadeRoot(): string
+    protected static function getFacadeRoot(): string
     {
         return TimeInTransit::class;
     }
