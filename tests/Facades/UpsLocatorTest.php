@@ -16,17 +16,17 @@ class UpsLocatorTest extends TestCase
 {
     use FacadeTrait;
 
-    protected function getFacadeAccessor(): string
+    protected static function getFacadeAccessor(): string
     {
         return 'ups.locator';
     }
 
-    protected function getFacadeClass(): string
+    protected static function getFacadeClass(): string
     {
         return UpsLocator::class;
     }
 
-    protected function getFacadeRoot(): string
+    protected static function getFacadeRoot(): string
     {
         return Locator::class;
     }
