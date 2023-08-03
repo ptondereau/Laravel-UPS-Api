@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Facade;
  * This is the TimeInTransit facade class.
  *
  * @author Pierre Tondereau <pierre.tondereau@gmail.com>
+ * @mixin \Ups\TimeInTransit
  */
 class UpsTimeInTransit extends Facade
 {
