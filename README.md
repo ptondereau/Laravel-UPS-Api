@@ -1,7 +1,7 @@
 Laravel UPS Api
 =================
 
-## For Laravel 8, 9, 10 and 11
+## For Laravel 10 and 11
 
 <p align="center">
 <a href="https://github.com/ptondereau/Laravel-UPS-Api/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/ptondereau/Laravel-UPS-Api/Tests?label=Tests&style=flat-square" alt="Build Status"/></a>
