@@ -16,6 +16,8 @@ jobs:
         exclude:
           - php: '8.1'
             laravel: '11'
+          - php: '8.1'
+            laravel: '12'
 
     steps:
       - name: Checkout Code
