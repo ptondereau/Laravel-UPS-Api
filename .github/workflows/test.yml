@@ -11,11 +11,13 @@ jobs:
 
     strategy:
       matrix:
-        php: [ '8.2', '8.3', '8.4' ]
-        laravel: [ '11', '12', '13' ]
+        php: [ '8.1', '8.2', '8.3' ]
+        laravel: [ '10', '11', '12' ]
         exclude:
-          - php: '8.2'
-            laravel: '13'
+          - php: '8.1'
+            laravel: '11'
+          - php: '8.1'
+            laravel: '12'
 
     steps:
       - name: Checkout Code
@@ -31,8 +33,16 @@ jobs:
       - name: Setup Problem Matchers
         run: echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
 
+      - name: Select Laravel 10
+        uses: nick-invision/retry@v1
+        with:
+          timeout_minutes: 5
+          max_attempts: 5
+          command: composer require "laravel/framework:10.*" --no-update --no-interaction
+        if: "matrix.laravel == '10'"
+
       - name: Select Laravel 11
-        uses: nick-invision/retry@v3
+        uses: nick-invision/retry@v1
         with:
           timeout_minutes: 5
           max_attempts: 5
@@ -40,20 +50,12 @@ jobs:
         if: "matrix.laravel == '11'"
 
       - name: Select Laravel 12
-        uses: nick-invision/retry@v3
+        uses: nick-invision/retry@v1
         with:
           timeout_minutes: 5
           max_attempts: 5
           command: composer require "laravel/framework:12.*" --no-update --no-interaction
         if: "matrix.laravel == '12'"
-
-      - name: Select Laravel 13
-        uses: nick-invision/retry@v3
-        with:
-          timeout_minutes: 5
-          max_attempts: 5
-          command: composer require "laravel/framework:13.*" --no-update --no-interaction
-        if: "matrix.laravel == '13'"
 
       - name: Install PHP Dependencies
         uses: nick-invision/retry@v3
