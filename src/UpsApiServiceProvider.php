@@ -5,7 +5,6 @@ namespace Ptondereau\LaravelUpsApi;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Lumen\Application as LumenApplication;
 use Ups\AddressValidation;
 use Ups\Locator;
 use Ups\QuantumView;
@@ -48,8 +47,6 @@ class UpsApiServiceProvider extends ServiceProvider
         $source = realpath(__DIR__.'/../config/ups.php');
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('ups.php')]);
-        } elseif ($this->app instanceof LumenApplication) {
-            $this->app->configure('ups');
         }
         $this->mergeConfigFrom($source, 'ups');
     }
