@@ -11,22 +11,22 @@ use Illuminate\Support\Facades\Config;
  */
 class ConfigTest extends TestCase
 {
-    public function testAccessKeyConfig()
+    public function testAccessKeyConfig(): void
     {
         $this->assertEquals(Config::get('ups.access_key'), 'test');
     }
 
-    public function testUserIdConfig()
+    public function testUserIdConfig(): void
     {
         $this->assertEquals(Config::get('ups.user_id'), 'test');
     }
 
-    public function testPasswordConfig()
+    public function testPasswordConfig(): void
     {
         $this->assertEquals(Config::get('ups.password'), 'test');
     }
 
-    public function testSandboxConfig()
+    public function testSandboxConfig(): void
     {
         $this->assertTrue(Config::get('ups.sandbox'));
     }

@@ -10,7 +10,8 @@
   },
   "require-dev": {
     "graham-campbell/testbench": "^6.3",
-    "phpunit/phpunit": "^10.5.20 || ^11.0 || ^12.0"
+    "phpunit/phpunit": "^10.5.20 || ^11.0 || ^12.0",
+    "phpstan/phpstan": "^2.2"
   },
   "autoload": {
     "psr-4": {
@@ -31,6 +32,10 @@
   ],
   "minimum-stability": "dev",
   "prefer-stable": true,
+  "scripts": {
+    "phpstan": "phpstan analyse --memory-limit=512M",
+    "test": "phpunit"
+  },
   "extra": {
     "laravel": {
       "providers": [

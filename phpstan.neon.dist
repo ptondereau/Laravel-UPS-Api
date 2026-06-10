@@ -1,0 +1,8 @@
+parameters:
+    level: 10
+    paths:
+        - config
+        - src
+        - tests
+    scanFiles:
+        - phpstan/LumenApplication.php
