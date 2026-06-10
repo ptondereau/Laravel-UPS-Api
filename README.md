@@ -1,10 +1,10 @@
 Laravel UPS Api
 =================
 
-## For Laravel 10 and 11
+## For Laravel 10 to 13
 
 <p align="center">
-<a href="https://github.com/ptondereau/Laravel-UPS-Api/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/workflow/status/ptondereau/Laravel-UPS-Api/Tests?label=Tests&style=flat-square" alt="Build Status"/></a>
+<a href="https://github.com/ptondereau/Laravel-UPS-Api/actions?query=workflow%3ATests"><img src="https://img.shields.io/github/actions/workflow/status/ptondereau/Laravel-UPS-Api/test.yml?branch=master&label=Tests&style=flat-square" alt="Build Status"/></a>
 <a href="https://github.styleci.io/repos/54156171"><img src="https://github.styleci.io/repos/54156171/shield" alt="StyleCI Status"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square" alt="Software License"/></a>
 <a href="https://packagist.org/packages/ptondereau/laravel-ups-api"><img src="https://img.shields.io/packagist/dt/ptondereau/laravel-ups-api?style=flat-square" alt="Packagist Downloads"/></a>
