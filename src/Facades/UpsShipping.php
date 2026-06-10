@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Facade;
  * This is the Shipping facade class.
  *
  * @author Pierre Tondereau <pierre.tondereau@gmail.com>
+ *
+ * @mixin \Ups\Shipping
  */
 class UpsShipping extends Facade
 {
